@@ -29,6 +29,7 @@ Route::resource('tarefa', TarefaController::class);
 
 Route::get('mensagem-teste', function(){
     // return new MensagemMail();
+
     Mail::to('juniorlima.dev@gmail.com')->send(new MensagemMail());
     return 'E-mail enviado com sucesso!';
 });
